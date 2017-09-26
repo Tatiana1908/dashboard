@@ -27,6 +27,10 @@ $lightPink: #ec7171;
 $blue: #56819f;
 $white: #fff;
 
+// default padding
+
+$defaultIndent: 18px;
+
 //component var
 
 //link component
@@ -40,6 +44,7 @@ $linkHoverColor: #ffa200;
 //title component
 $titleColor: #a6a6a6;
 $titleFontSize: 16px;
+$smallTitleFontSize: 14px;
 
 // btn component
 $btnFontSize: 18px;
@@ -76,3 +81,8 @@ $positiveNotificationBg: #96cc9b;
 $positiveNotificationBgHover: #74b67a;
 $negativeNotificationBg: #ec7171;
 $negativeNotificationBgHover: #de5252;
+ 
+//aside component
+
+$asideBg: #191919;
+$asideWidth: 188px;
