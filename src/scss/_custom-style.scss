@@ -5,5 +5,59 @@
 
         & > *{
             margin-bottom: 15px;
+            margin-right: 18px;
         }
+
+        &.range-slider-wrap{
+            height: 100px;
+        }
+}
+// main style
+
+main{
+    padding-left: $asideWidth;
+    padding-top: 60px;
+    
+}
+
+//table style
+
+.links .table{
+    margin: $defaultIndent 0;
+}
+.details .table{
+    margin: 0;
+}
+.details .table tr th,
+.payout .table tr th{
+    padding: 38px 13px 22px;
+    text-align: left;
+}
+.details .table tr td,
+.payout .table tr td{
+    padding: $defaultIndent 13px;
+}
+
+.datepicker-form .form-control{
+    width:auto;
+}
+.detail .panel-body{
+    padding-top: 10px;
+}
+.generate-links-form{
+    .form-control{
+        flex-grow:1;
+        margin-right: 16px;
+    }
+}
+
+//postback style
+.postback {
+
+    .panel-footer{
+        padding: 22px;
+    }
+}
+.indent-for-select{
+    margin-bottom: 33px;
 }

@@ -1,10 +1,24 @@
+// text classes
+
 .text-bold{
     font-weight: $fontBold;
 }
+.text-center{
+    text-align: center;
+}
+
 .blue-bg{
     background-color: #80bfca;
 }
-
+.orange-bg{
+    background-color: #ff9a38;
+}
+.green-bg{
+    background-color: #59b66d;
+}
+.grey-bg{
+    background-color: #f3f3f1;
+}
 //class position fixed
 .fixed-to-top{
     position: fixed;
@@ -22,4 +36,10 @@
 }
 .justify-content-sb{
     justify-content: space-between;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-end{
+    justify-content: flex-end;
 }
