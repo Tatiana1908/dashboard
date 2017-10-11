@@ -24,19 +24,26 @@
 <header class="fixed-to-top header">
     <div class="flex-container container-fluid justify-content-end">
         <div class="user-controls flex-container align-items-center">
-            <div class="user-info user-wallet flex-container">
+            <div class="user-info user-wallet flex-container align-items-center dropdown-wrap">
                 <span class="icon icon-wallet"></span>
                 $1,500.00
                 <span class="icon icon-arrow-down"></span>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="">link</a></li>
+                        <li><a href="">link</a></li>
+                        <li><a href="">link</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="user-info user-notification">
+            <div class="user-info user-notification flex-container align-items-center">
                 <span class="icon icon-notification"></span>
             </div>
             <div class="user-info profile flex-container align-items-center">
                  <span class="icon icon-profile"></span>
                  <a class="link">Leonardo&nbspDicaprio</a>
             </div>
-            <div class="user-info user-quit">
+            <div class="user-info user-quit flex-container align-items-center">
                 <span class="icon icon-quit"></span>
             </div>
         </div>
@@ -60,14 +67,49 @@
     </div>
     <div class="aside-menu">
         <ul>
-            <li><a href=""><span class="icon icon-general"></span>General</a></li>
-            <li class="active"><a href=""><span class="icon icon-details"></span>Details</a></li>
-            <li><a href=""><span class="icon icon-links"></span>Links</a></li>
-            <li><a href=""><span class="icon icon-banners"></span>Banners</a></li>
-            <li><a href=""><span class="icon icon-personaldata"></span>Personal data</a></li>
-            <li><a href=""><span class="icon icon-payout"></span>Payout</a></li>
-            <li><a href=""><span class="icon icon-postback"></span>Postback</a></li>
-        </ul>
+                <li>
+                    <a href="index.html">
+                        <span class="text-center icon icon-general"></span>
+                        <span class="menu-link">General</span>    
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="details.html">
+                        <span class="text-center icon icon-details"></span>
+                        <span class="menu-link">Details</span> 
+                    </a>
+                </li>
+                <li>
+                    <a href="" data-modal="#add-links-modal">
+                        <span class="text-center icon icon-links"></span>
+                        <span class="menu-link">Links</span> 
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="text-center icon icon-banners"></span>
+                        <span class="menu-link">Banners</span> 
+                    </a>
+                </li>
+                <li>
+                    <a href="personal_data.html">
+                        <span class="text-center icon icon-personaldata"></span>
+                        <span class="menu-link">Personal data</span> 
+                    </a>
+                </li>
+                <li>
+                    <a href="payout.html">
+                        <span class="text-center icon icon-payout"></span>
+                        <span class="menu-link">Payout</span> 
+                    </a>
+                </li>
+                <li>
+                    <a href="postback.html">
+                        <span class="text-center icon icon-postback"></span>
+                        <span class="menu-link">Postback</span> 
+                    </a>
+                </li>
+            </ul>
         <div class="your-manager">
             <h3 class="page-title small-title">your manage</h3>
             <div class="manager-info flex-container align-items-center">
@@ -279,10 +321,19 @@
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+
 <!-- chart -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
 <script src="js/jquery.scrollbar.js"></script>
+<script src="js/jquery.bpopup.min.js"></script>
+
 <!-- init plugin -->
+
 <script src="js/init.js"></script>
+
+<!-- plugin -->
+<script src="js/plugins.min.js"></script>
+
 </body>
 </html>
