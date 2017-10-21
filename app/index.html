@@ -30,7 +30,7 @@
         <div class="user-controls flex-container align-items-center">
             <div class="user-info user-wallet flex-container align-items-center dropdown-wrap">
                 <span class="icon icon-wallet"></span>
-                $1,500.00
+                <span class="money">$1,500.00</span>
                 <span class="icon icon-arrow-down"></span>
                 <div class="dropdown-menu">
                     <ul>
@@ -172,7 +172,10 @@
                                 <span>Earned</span>
                             </div>
                         </div>
-                        <canvas id="myChart" width ="600" height="300"></canvas>
+                        <div class="chart">
+                            <canvas id="myChart" width ="600" height="300"></canvas>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -286,7 +289,7 @@
     </div>
     
     <div class="modal-body top">
-        <div class="flex-container">
+        <div class="wrap-in-mobile flex-container">
             <div class="input-group">
                 <h3 class="section-title">Scheme name</h3>
                 <input type="text" class="form-control" placeholder="Name">
@@ -302,10 +305,10 @@
             <div class="select-group language">
                 <h3 class="section-title">Language</h3>
                 <select name="language" class=" language custom-select">
-                    <option value="">EN</option>
-                    <option value="">Select compain 2</option>
-                    <option value="">Select compain 3</option>
-                    <option value="">Select compain 4</option>
+                    <option value="1">EN</option>
+                    <option value="2">Select compain 2</option>
+                    <option value="3">Select compain 3</option>
+                    <option value="4">Select compain 4</option>
                 </select>
             </div>
         </div>
@@ -476,7 +479,7 @@
         </div>
     </div>
     <div class="modal-footer">
-        <form class="flex-container align-items-center generate-links-form">
+        <form class="flex-container align-items-center generate-links-form wrap-in-mobile">
             <input type="text" class="form-control" placeholder="Generate link">
             <button class="btn btn-disabled">Copy link</button>
             <button class="btn btn-action">Save</button>

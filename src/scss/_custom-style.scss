@@ -32,10 +32,18 @@ main{
 .payout .table tr th{
     padding: 38px 13px 22px;
     text-align: left;
+
+    @media(max-width: 480px){
+        padding: 20px 8px 22px;
+    }
 }
 .details .table tr td,
 .payout .table tr td{
     padding: $defaultIndent 13px;
+
+    @media(max-width: 480px){
+        padding: 12px 8px;
+    }
 }
 
 .datepicker-form .form-control{
@@ -43,6 +51,16 @@ main{
 }
 .detail .panel-body{
     padding-top: 10px;
+}
+.panel-body .container-sm{
+    @media(max-width:599px){
+        padding: 0;
+    }
+}
+.links .panel-body .container-sm{
+    @media(max-width:599px){
+        padding: 0 18px;
+    }
 }
 .generate-links-form{
     .form-control{
@@ -59,16 +77,31 @@ main{
     }
 }
 .indent-for-select{
-    margin-bottom: 33px;
+    margin-bottom: 34px;
+
+    @media (max-width: 599px){
+        margin-bottom: 0;
+     }
+    
 }
 
 ._mobileSidebar{
     main{
         padding-left: $sidebarMobileWidth;
+
+        @media (max-width: 480px){
+           padding-left: 50px;
+           padding-top: 40px;
+        }
+        
     }
     .aside{
         width: $sidebarMobileWidth;
         overflow-y: visible;
+
+        @media (max-width: 480px){
+            width: 50px;
+        }
 
         .logo{
             display: none;
@@ -81,6 +114,10 @@ main{
                 text-align: center;
                 position: relative;
 
+                @media (max-width: 480px){
+
+                }
+
                 &:hover{
                     .menu-link{
                         display: flex;
@@ -90,6 +127,10 @@ main{
             a{
                 .icon{
                     margin-right: 0;
+
+                    @media (max-width: 480px){
+                        font-size: 15px;   
+                    }
                 }
                 .menu-link{
                     display: none;
@@ -127,3 +168,19 @@ main{
         }
     }
 }
+
+.table-wrap{
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.details .table-wrap{
+
+    @media(max-width: 1180px){
+        justify-content: flex-start;
+    }
+
+    .table{
+        max-width: 1200px;
+    }
+}
+

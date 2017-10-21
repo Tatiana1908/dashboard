@@ -43,3 +43,31 @@
 .justify-content-end{
     justify-content: flex-end;
 }
+.wrap-in-mobile{
+    @media(max-width: 599px){
+        flex-wrap: wrap;
+    }
+}
+
+.column-in-mobile{
+    @media(max-width: 599px){
+        display: flex;
+        flex-direction: column;
+    }
+}
+// mobile
+
+.pagination li .hidden-in-xxs{
+    @media(max-width: 599px){
+        display: none;
+
+    }
+}
+.pagination li .visible-in-xxs{
+    display: none;
+    
+    @media(max-width: 599px){
+        display: inline-block;
+        
+    }
+}

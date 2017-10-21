@@ -69,20 +69,6 @@
       });
   }
 
-
-  // modal init
-  var modalBtns = $('[data-modal]');
-
-  modalBtns.on('click', function (event) {
-      event.preventDefault();
-
-      var target = $(this).attr('data-modal');
-
-      $(target).bPopup({
-          closeClass:'close-modal'
-      });
-  });
-
     //modal init
     var modalBtns = $('[data-modal]');
 
