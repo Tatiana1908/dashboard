@@ -1259,8 +1259,27 @@ label {
   display: block;
   width: 100%; }
 
-.language .jq-selectbox__select-text::before {
+.language .jq-selectbox__select-text::before,
+.language .jq-selectbox li.eng::before {
   content: url("../img/language-img.jpg");
+  padding-right: 13px;
+  top: 5px;
+  position: relative; }
+
+.language .jq-selectbox li.french::before {
+  content: url("../img/french.jpg");
+  padding-right: 13px;
+  top: 5px;
+  position: relative; }
+
+.language .jq-selectbox li.ukr::before {
+  content: url("../img/ukr.jpg");
+  padding-right: 13px;
+  top: 5px;
+  position: relative; }
+
+.language .jq-selectbox li.russian::before {
+  content: url("../img/russian.jpg");
   padding-right: 13px;
   top: 5px;
   position: relative; }
